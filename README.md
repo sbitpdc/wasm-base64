@@ -4,8 +4,8 @@
 [![WebAssembly](https://img.shields.io/badge/WebAssembly-1.0-blue?logo=webassembly)](https://webassembly.org/)
 [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-green)](https://opensource.org/licenses/AGPL-3.0)
 
-pub fn base64_to_uint8_array(base64_str: &str) -> Result<Uint8Array, JsValue> {
-**wasm-base64** 是一个基于 Rust 和 WebAssembly 的高性能 Base64 编码解码库，主要处理这array_buffer_to_base64、base64_to_array_buffer、uint8_array_to_base64、array_buffer_to_base64_direct方法。因为在处理图片转换的时候，使用原生的javascript方法，如果图片很大，处理起来会很卡，特别是要处理多张图片时候，性能相当差，还有内存泄露隐患。这个库专为现代 Web 应用设计。相比纯 JavaScript 实现，它提供 3-4 倍的性能提升，特别适合处理大型数据或性能敏感场景。
+
+**wasm-base64** 是一个基于 Rust 和 WebAssembly 的高性能 Base64 编码解码库，主要处理array_buffer_to_base64、base64_to_array_buffer、uint8_array_to_base64、array_buffer_to_base64_direct方法。因为在处理图片转换的时候，使用原生的javascript方法，如果图片很大，处理起来会很卡，特别是要处理多张图片时候，性能相当差，还有内存泄露隐患。这个库专为现代 Web 应用设计。相比纯 JavaScript 实现，它提供 3-4 倍的性能提升，特别适合处理大型数据或性能敏感场景。
 
 ## ✨ 核心特性
 
